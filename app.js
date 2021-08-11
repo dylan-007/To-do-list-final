@@ -16,7 +16,7 @@ app.use(express.static("public"));
 // let items =["Buy Food","Eat Food" ,"Cook Food"] ;
 // let workItems = [];
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("server started on port 3000");
 });
 
